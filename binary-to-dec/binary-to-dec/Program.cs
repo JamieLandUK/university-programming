@@ -13,7 +13,9 @@ namespace binary_to_dec
             // I need to separate the string into the single letters (or numbers)
             char[] array = input.ToCharArray();
 
-            // Flip the array as binary works as ...32, 16, 8, 4, 2, 1
+            /* Flip the array as binary works as ...32, 16, 8, 4, 2, 1
+             * and I want to be able to access the units first easily.
+             */
             Array.Reverse(array);
             // Base sum to keep track of all what is inside the for loop.
             int sum = 0;
