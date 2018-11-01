@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<name>Abigail</name>
+	<age>18</age>
+	<interests count="3">
+		<interest>Games</interest>
+		<interest>C#</interest>
+		<interest>Java</interest>
+	</interests>
+	<name>Basil</name>
+	<age>19</age>
+	<interests count="4">
+		<interest>Running</interest>
+		<interest>C#</interest>
+		<interest>Java</interest>
+		<interest>Reading</interest>
+	</interests>
+</students>
