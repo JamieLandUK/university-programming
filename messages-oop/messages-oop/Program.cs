@@ -21,6 +21,11 @@ namespace messages_oop
             Console.WriteLine("Today's date is {0}!", DateTime.Now.ToString("dd/MM/yy"));
         }
 
+        public void Double(ref int x)
+        {
+            x *= 2;
+        }
+
         public void WriteLog(string x)
         {
             File.AppendAllText("yes.log", Environment.NewLine + DateTime.Now.ToString("dd/MM/yy: ") + x);
@@ -35,6 +40,18 @@ namespace messages_oop
             }
             return all_messages;
         }
+
+        public static void WriteRectangle(int x, int y)
+        {
+            for (int i = 0; i < y; i++)
+            {
+                for (int j = 0; j < x; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
     }
 
     class Program
@@ -42,10 +59,9 @@ namespace messages_oop
         static void Main(string[] args)
         {
             Message message = new Message();
-            message.DisplayMessage();
-            message.DisplayDate();
-            message.WriteLog(Console.ReadLine());
-            message.ReadLogFile();  
+
+            Message.WriteRectangle(4, 3);
+
             Console.ReadKey();
         }
     }
